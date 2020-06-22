@@ -12,6 +12,7 @@
  ****************************************************************/
 function getChannelName(channel) {
   // Your code here
+  return channel.name;
 }
 
 /**************************************************************
@@ -21,6 +22,7 @@ function getChannelName(channel) {
  ****************************************************************/
 function numberOfVideos(channel) {
   // Your code here
+  return channel.videos.length;
 }
 
 /**************************************************************
@@ -34,6 +36,8 @@ function numberOfVideos(channel) {
  ****************************************************************/
 function channelHasVideo(videoTitle, channel) {
   // Your code here
+  videoTitle = videoTitle.toLowerCase();
+  return channel.videos.some((video) => video.title.toLowerCase() === videoTitle);
 }
 
 /**************************************************************
@@ -46,6 +50,8 @@ function channelHasVideo(videoTitle, channel) {
  ****************************************************************/
 function getChannelByName(channelName, channels) {
   // Your code here
+  channelName=channelName.toLowerCase();
+  return channels.find((object)=> object.name.toLowerCase() === channelName);
 }
 
 /**************************************************************
@@ -58,6 +64,8 @@ function getChannelByName(channelName, channels) {
  ****************************************************************/
 function getChannelByVideoTitle(videoTitle, channels) {
   // Your code here
+
+
 }
 
 /**************************************************************
